@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+
+.padding_tambahan{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin-bottom: 20px;
+}
+.dashboard {
+    width: 90%;
+    max-width: 1200px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh; /* Pastikan dashboard memiliki tinggi minimal */
+}
+
+.greeting {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #3c3c3c;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.greeting h1 {
+    font-size: 2.5rem; /* Ukuran font lebih besar */
+    margin: 0;
+    word-wrap: break-word; /* Memastikan teks terpotong dengan rapi */
+    padding: 0 10px; /* Memberikan ruang di samping teks */
+    color: #ffd700; /* Menambahkan warna pada teks */
+}
+
+.interest-rates, .price-change, .currency-buttons {
+    background: #3c3c3c;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffd700;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rate-container, .price-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rate-item, .price-item {
+    background: #4c4c4c;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+    max-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.currency-buttons .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.currency-button {
+    background: #ffd700;
+    color: #1c1c1c;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.currency-button:hover {
+    background: #e6b800;
+}

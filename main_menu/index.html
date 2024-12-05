@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dashboard Main Menu</title>
+</head>
+
+
+
+<body>
+<div class="padding_tambahan"></div>
+    <div class="dashboard">
+        <!-- Greeting Section -->
+        <div class="greeting">
+            <h1 id="greeting-message"></h1>
+        </div>
+
+        <!-- Realtime Interest Rate Section -->
+        <div class="interest-rates">
+            <h2>Realtime Interest Rates</h2>
+            <div id="interest-rate-data" class="rate-container"></div>
+        </div>
+
+        <!-- Daily Price Change Section -->
+        <div class="price-change">
+            <h2>Daily Price Changes</h2>
+            <div id="price-change-data" class="price-container">
+                <!-- TradingView Widget for XAUUSD -->
+                <div class="widget-item">
+                    <h3>XAUUSD</h3>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js">
+                        {
+                          "symbol": "OANDA:XAUUSD",
+                          "width": "100%",
+                          "height": "180",
+                          "locale": "en",
+                          "dateRange": "1D",
+                          "colorTheme": "dark",
+                          "trendLineColor": "rgba(41, 98, 255, 1)",
+                          "underLineColor": "rgba(41, 98, 255, 0.3)",
+                          "isTransparent": false,
+                          "autosize": true,
+                          "largeChartUrl": "",
+                          "showSymbolLogo": true,
+                          "showVolume": false,
+                          "percent": true
+                        }
+                    </script>
+                </div>
+
+                <!-- TradingView Widget for EURUSD -->
+                <div class="widget-item">
+                    <h3>EURUSD</h3>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js">
+                        {
+                          "symbol": "OANDA:EURUSD",
+                          "width": "100%",
+                          "height": "180",
+                          "locale": "en",
+                          "dateRange": "1D",
+                          "colorTheme": "dark",
+                          "trendLineColor": "rgba(41, 98, 255, 1)",
+                          "underLineColor": "rgba(41, 98, 255, 0.3)",
+                          "isTransparent": false,
+                          "autosize": true,
+                          "largeChartUrl": "",
+                          "showSymbolLogo": true,
+                          "showVolume": false,
+                          "percent": true
+                        }
+                    </script>
+                </div>
+
+                <!-- TradingView Widget for GBPJPY -->
+                <div class="widget-item">
+                    <h3>GBPJPY</h3>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js">
+                        {
+                          "symbol": "OANDA:GBPJPY",
+                          "width": "100%",
+                          "height": "180",
+                          "locale": "en",
+                          "dateRange": "1D",
+                          "colorTheme": "dark",
+                          "trendLineColor": "rgba(41, 98, 255, 1)",
+                          "underLineColor": "rgba(41, 98, 255, 0.3)",
+                          "isTransparent": false,
+                          "autosize": true,
+                          "largeChartUrl": "",
+                          "showSymbolLogo": true,
+                          "showVolume": false,
+                          "percent": true
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <!-- Currency Buttons Section -->
+        <div class="currency-buttons">
+            <h2>Select Currency Pair</h2>
+            <div class="button-container">
+                <a href="file:///C:/Users/nurli/Desktop/Koding/proyek_scalping/website_XAUUSD/index.html" class="currency-button">XAUUSD</a>
+                <a href="/proyek_scalping/website_GBPJPY/index.html" class="currency-button">EURUSD</a>
+                <a href="#" class="currency-button">GBPJPY</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<div class="padding_tambahan"></div>
+</body>
+</html>
