@@ -14,7 +14,7 @@ updateGreeting();
 
 // Dummy Interest Rates
 const interestRates = [
-    { country: "USA", rate: "4.75%" },
+    { country: "USA", rate: "4.5%" },
     { country: "Eurozone", rate: "3.4%" },
     { country: "Japan", rate: "0.10%" },
 ];
